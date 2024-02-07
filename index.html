@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap" rel="stylesheet">
+</head>
+<body class="container mx-auto">
+    <header>
+        <div class="flex justify-around items-center bg-base-100">
+            <div class="">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                        <li><a>Submenu 1</a></li>
+                        <li><a>Submenu 2</a></li>
+                      </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-3xl">DEMAS RUSLI</a>
+            </div>
+            <div class=" hidden lg:flex z-10">
+              <ul class="menu menu-horizontal px-1">
+                <li class="motherMenu uppercase text-xl"><a>PHOTOGRAPHY</a>
+                    <ul class="hoverMenu bg-white">
+                        <li>item1</li>
+                        <li>item1</li>
+                        <li>item1</li>
+                        <li>item1</li>
+                    </ul>
+                </li>
+                <li class="motherMenu uppercase text-xl"><a>videos/tutoriels</a>
+                   
+                </li>
+                <li class="motherMenu uppercase text-xl"><a>gear</a></li>
+                <li class="motherMenu uppercase text-xl"><a>blog</a></li>
+                <li class="motherMenu uppercase text-xl"><a>bio</a> </li>
+                <li class="motherMenu uppercase text-xl"><a>store</a>
+                    <ul class="hoverMenu bg-white">
+                        <li>item1</li>
+                        <li>item1</li>
+                        <li>item1</li>
+                        <li>item1</li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </header>
+    <main>
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="https://static.wixstatic.com/media/c56e34_e86a24f9e66f49faa2440bddb307961c~mv2.jpg/v1/fill/w_2043,h_1262,al_c,q_90,usm_0.66_1.00_0.01/c56e34_e86a24f9e66f49faa2440bddb307961c~mv2.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://static.wixstatic.com/media/c56e34_ee860bd989ec49af882d83b5f40db79a~mv2.jpg/v1/fill/w_2043,h_1262,al_c,q_90,usm_0.66_1.00_0.01/c56e34_ee860bd989ec49af882d83b5f40db79a~mv2.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="https://static.wixstatic.com/media/c56e34_2abb648aa0674e8abc05939310c0807a~mv2.jpg/v1/fill/w_2043,h_1262,al_c,q_90,usm_0.66_1.00_0.01/c56e34_2abb648aa0674e8abc05939310c0807a~mv2.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="https://static.wixstatic.com/media/c56e34_e86a24f9e66f49faa2440bddb307961c~mv2.jpg/v1/fill/w_2043,h_1262,al_c,q_90,usm_0.66_1.00_0.01/c56e34_e86a24f9e66f49faa2440bddb307961c~mv2.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="	https://static.wixstatic.com/media/c56e34_e86a24f9…1/c56e34_e86a24f9e66f49faa2440bddb307961c~mv2.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+         
+          </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+.motherMenu{
+position: relative;
+}
+.hoverMenu{
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    transition: 1s;
+    transition-duration: 1s;
+    transform-origin: top bottom;
+}
+.hoverMenu li{
+    border-bottom: 2px solid aqua;
+    padding: 5px 40px;
+    margin-bottom: 5px;
+}
+.motherMenu:hover .hoverMenu{
+    visibility: visible;
+    transform-origin: top bottom;
+}
